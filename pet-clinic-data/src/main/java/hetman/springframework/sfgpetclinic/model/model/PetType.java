@@ -1,4 +1,4 @@
-package hetman.springframework.sfgpetclinic.model;
+package hetman.springframework.sfgpetclinic.model.model;
 
 public class PetType {
     public String getName() {
