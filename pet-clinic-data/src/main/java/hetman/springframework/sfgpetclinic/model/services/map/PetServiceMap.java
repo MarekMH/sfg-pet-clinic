@@ -1,11 +1,11 @@
 package hetman.springframework.sfgpetclinic.model.services.map;
 
 import hetman.springframework.sfgpetclinic.model.model.Pet;
-import hetman.springframework.sfgpetclinic.model.services.CrudService;
+import hetman.springframework.sfgpetclinic.model.services.PetService;
 
 import java.util.Set;
 
-public class PetServiceMap extends AbstractMapService<Pet, Long>  implements CrudService<Pet, Long> {
+public class PetServiceMap extends AbstractMapService<Pet, Long>  implements PetService {
     @Override
     public Set<Pet> findAll() {
         return super.findAll();

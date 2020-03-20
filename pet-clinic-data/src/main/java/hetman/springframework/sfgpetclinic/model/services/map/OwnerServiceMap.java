@@ -1,11 +1,11 @@
 package hetman.springframework.sfgpetclinic.model.services.map;
 
 import hetman.springframework.sfgpetclinic.model.model.Owner;
-import hetman.springframework.sfgpetclinic.model.services.CrudService;
+import hetman.springframework.sfgpetclinic.model.services.OwnerService;
 
 import java.util.Set;
 
-public class OwnerServiceMap extends AbstractMapService<Owner, Long>  implements CrudService<Owner, Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner, Long>  implements OwnerService {
 
     @Override
     public Set<Owner> findAll() {
@@ -30,5 +30,10 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long>  implements
     @Override
     public Owner findById(Long id) {
         return super.findById(id);
+    }
+
+    @Override
+    public Owner findByLastName(String lastName) {
+        return null;
     }
 }
