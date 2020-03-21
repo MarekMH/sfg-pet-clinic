@@ -1,7 +1,7 @@
-package hetman.springframework.sfgpetclinic.model.services.map;
+package hetman.springframework.sfgpetclinic.services.map;
 
-import hetman.springframework.sfgpetclinic.model.model.Owner;
-import hetman.springframework.sfgpetclinic.model.services.OwnerService;
+import hetman.springframework.sfgpetclinic.model.Owner;
+import hetman.springframework.sfgpetclinic.services.OwnerService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;

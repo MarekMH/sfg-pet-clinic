@@ -1,4 +1,4 @@
-package hetman.springframework.sfgpetclinic.model.model;
+package hetman.springframework.sfgpetclinic.model;
 
 public class PetType extends BaseEntity{
     public String getName() {

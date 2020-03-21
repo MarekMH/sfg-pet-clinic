@@ -1,4 +1,4 @@
-package hetman.springframework.sfgpetclinic.model.services.map;
+package hetman.springframework.sfgpetclinic.services.map;
 
 import java.util.HashMap;
 import java.util.HashSet;

@@ -1,6 +1,6 @@
 package hetman.springframework.sfgpetclinic.controllers;
 
-import hetman.springframework.sfgpetclinic.model.services.OwnerService;
+import hetman.springframework.sfgpetclinic.services.OwnerService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;

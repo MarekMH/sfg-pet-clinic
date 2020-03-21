@@ -1,4 +1,4 @@
-package hetman.springframework.sfgpetclinic.model.services;
+package hetman.springframework.sfgpetclinic.services;
 
 import java.util.Set;
 

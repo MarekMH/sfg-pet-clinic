@@ -1,9 +1,9 @@
 package hetman.springframework.sfgpetclinic.bootstrap;
 
-import hetman.springframework.sfgpetclinic.model.model.Owner;
-import hetman.springframework.sfgpetclinic.model.model.Vet;
-import hetman.springframework.sfgpetclinic.model.services.OwnerService;
-import hetman.springframework.sfgpetclinic.model.services.VetService;
+import hetman.springframework.sfgpetclinic.model.Owner;
+import hetman.springframework.sfgpetclinic.model.Vet;
+import hetman.springframework.sfgpetclinic.services.OwnerService;
+import hetman.springframework.sfgpetclinic.services.VetService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -49,7 +49,7 @@ public class DataLoader implements CommandLineRunner {
         vet2.setFirstName("Jessie");
         vet2.setLastName("Porter");
 
-        vetService.save(vet1);
+        vetService.save(vet2);
 
         System.out.println("Loaded Vets....");
     }

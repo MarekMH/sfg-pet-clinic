@@ -1,4 +1,4 @@
-package hetman.springframework.sfgpetclinic.model.model;
+package hetman.springframework.sfgpetclinic.model;
 
 import java.io.Serializable;
 
