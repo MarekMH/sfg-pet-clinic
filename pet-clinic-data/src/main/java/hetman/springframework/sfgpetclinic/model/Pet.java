@@ -54,7 +54,9 @@ public class Pet extends BaseEntity{
         return birthDate;
     }
 
-    public void setBirthDate(LocalDate birthDate)
+    public void setBirthDate(LocalDate birthDate){
+        this.birthDate = birthDate;
+    };
 
     public Set<Visit> getVisits() {
         return visits;
