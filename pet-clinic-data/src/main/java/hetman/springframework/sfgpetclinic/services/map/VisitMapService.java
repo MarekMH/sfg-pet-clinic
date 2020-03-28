@@ -2,9 +2,10 @@ package hetman.springframework.sfgpetclinic.services.map;
 
 import hetman.springframework.sfgpetclinic.model.Visit;
 import hetman.springframework.sfgpetclinic.services.VisitService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
-
+@Service
 public class VisitMapService extends AbstractMapService<Visit, Long> implements VisitService {
 
 
