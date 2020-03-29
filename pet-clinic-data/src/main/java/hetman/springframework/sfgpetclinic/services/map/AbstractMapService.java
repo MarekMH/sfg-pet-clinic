@@ -1,9 +1,11 @@
 package hetman.springframework.sfgpetclinic.services.map;
 
 import hetman.springframework.sfgpetclinic.model.BaseEntity;
+import org.springframework.context.annotation.Profile;
 
 import java.util.*;
 
+@Profile({"default","map"})
 public class AbstractMapService<T extends BaseEntity,ID extends Long> {
     protected Map<Long, T> map = new HashMap<>();
 

@@ -3,14 +3,22 @@ package hetman.springframework.sfgpetclinic.services.springdatajpa;
 import hetman.springframework.sfgpetclinic.model.Visit;
 import hetman.springframework.sfgpetclinic.repositories.VisitRepository;
 import hetman.springframework.sfgpetclinic.services.VisitService;
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Set;
 
-public class VisitSDJpaVisitService implements VisitService {
+/**
+ * Created by jt on 8/7/18.
+ */
+@Service
+@Profile("springdatajpa")
+public class VisitSDJpaService implements VisitService {
+
     private final VisitRepository visitRepository;
 
-    public VisitSDJpaVisitService(VisitRepository visitRepository) {
+    public VisitSDJpaService(VisitRepository visitRepository) {
         this.visitRepository = visitRepository;
     }
 

@@ -1,12 +1,17 @@
-package hetman.springframework.sfgpetclinic.services.springdatajpa;
+package guru.springframework.sfgpetclinic.services.springdatajpa;
 
 import hetman.springframework.sfgpetclinic.model.Pet;
 import hetman.springframework.sfgpetclinic.repositories.PetRepository;
 import hetman.springframework.sfgpetclinic.services.PetService;
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Set;
 
+
+@Service
+@Profile("springdatajpa")
 public class PetSDJpaService implements PetService {
 
     private final PetRepository petRepository;
@@ -17,11 +22,9 @@ public class PetSDJpaService implements PetService {
 
     @Override
     public Set<Pet> findAll() {
-      Set<Pet> pets = new HashSet<>();
-
-      petRepository.findAll().forEach(pets::add);
-
-      return pets;
+        Set<Pet> pets = new HashSet<>();
+        petRepository.findAll().forEach(pets::add);
+        return pets;
     }
 
     @Override
