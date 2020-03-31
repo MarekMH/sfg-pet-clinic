@@ -41,17 +41,19 @@ class OwnerSDJpaServiceTest {
     @BeforeEach
     void setUp() {
         returnOwner = Owner.builder().id(1l).lastName(LAST_NAME).build();
+        System.out.println(returnOwner.getId());
+        System.out.println(returnOwner.getLastName());
     }
 
     @Test
     void findByLastName() {
-        when(ownerRepository.findByLastName(any())).thenReturn(returnOwner);
+            when(ownerRepository.findByLastName(any())).thenReturn(returnOwner);
 
-        Owner smith = service.findByLastName(LAST_NAME);
+            Owner smith = service.findByLastName(LAST_NAME);
 
-        assertEquals(LAST_NAME, smith.getLastName());
+            assertEquals(LAST_NAME, smith.getLastName());
 
-        verify(ownerRepository).findByLastName(any());
+            verify(ownerRepository).findByLastName(any());
     }
 
     @Test
