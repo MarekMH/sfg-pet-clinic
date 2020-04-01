@@ -21,7 +21,7 @@
     <dependencies>
         <dependency>
             <artifactId>pet-clinic-data</artifactId>
-            <groupId>guru.springframework</groupId>
+            <groupId>hetman.springframework</groupId>
             <version>0.0.2-SNAPSHOT</version>
         </dependency>
 
