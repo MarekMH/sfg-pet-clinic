@@ -41,8 +41,6 @@ class OwnerSDJpaServiceTest {
     @BeforeEach
     void setUp() {
         returnOwner = Owner.builder().id(1l).lastName(LAST_NAME).build();
-        System.out.println(returnOwner.getId());
-        System.out.println(returnOwner.getLastName());
     }
 
     @Test
